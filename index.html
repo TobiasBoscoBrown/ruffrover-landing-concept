@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>RuffRover 2.0™ — Hard-Bottom Dog Car Seat | Travel Safer Together</title>
+<meta name="description" content="The RuffRover 2.0 hard-bottom dog car seat keeps your pup safe, supported, and calm on every drive. Fits all cars, holds up to 280 lbs, 100% waterproof. Loved by 50,000+ pet parents." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#15110E;
+    --ink-2:#2A241F;
+    --orange:#EE7B1C;
+    --orange-dark:#CF640B;
+    --cream:#FBF7F1;
+    --sand:#F2E7DA;
+    --line:#E7DDD0;
+    --slate:#5C5650;
+    --green:#2C9D63;
+    --white:#ffffff;
+    --shadow:0 18px 40px -18px rgba(21,17,14,.35);
+    --radius:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    color:var(--ink);
+    background:var(--white);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.display{font-family:'Anton',sans-serif;font-weight:400;letter-spacing:.5px;line-height:1.02;text-transform:uppercase}
+  a{color:inherit;text-decoration:none}
+  img,svg{display:block;max-width:100%}
+  .wrap{width:100%;max-width:1140px;margin:0 auto;padding:0 22px}
+  .eyebrow{font-family:'Inter';font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.72rem;color:var(--orange-dark)}
+
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;justify-content:center;
+    background:var(--orange);color:#fff;font-weight:800;font-size:1.02rem;
+    padding:16px 30px;border-radius:60px;border:0;cursor:pointer;
+    text-transform:uppercase;letter-spacing:.6px;
+    box-shadow:0 12px 24px -10px rgba(238,123,28,.7);
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+  }
+  .btn:hover{transform:translateY(-2px);background:var(--orange-dark);box-shadow:0 16px 30px -10px rgba(238,123,28,.85)}
+  .btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--ink);box-shadow:none;padding:14px 28px}
+  .btn.ghost:hover{background:var(--ink);color:#fff}
+
+  .anno{background:var(--ink);color:#fff;text-align:center;font-size:.82rem;font-weight:700;letter-spacing:.4px;padding:9px 16px}
+  .anno b{color:var(--orange)}
+
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+  .logo{display:flex;align-items:center;gap:9px}
+  .logo .mark{width:34px;height:24px}
+  .logo .word{font-family:'Anton';font-size:1.5rem;letter-spacing:1px}
+  .navlinks{display:flex;gap:26px;font-weight:600;font-size:.92rem}
+  .navlinks a{color:var(--ink-2);transition:color .15s}
+  .navlinks a:hover{color:var(--orange-dark)}
+  .nav .btn{padding:11px 22px;font-size:.82rem}
+  @media(max-width:860px){.navlinks{display:none}.nav .btn.headcta{display:none}}
+
+  .hero{background:radial-gradient(120% 120% at 80% 0%, #fff 0%, var(--cream) 60%, var(--sand) 100%);padding:54px 0 30px;position:relative}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center}
+  .stars{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:.9rem;color:var(--ink-2)}
+  .stars .s{color:var(--orange)}
+  .hero h1{font-size:clamp(2.6rem,5.4vw,4.4rem);margin:16px 0 14px}
+  .hero h1 em{font-style:normal;color:var(--orange)}
+  .hero p.lead{font-size:1.12rem;color:var(--slate);max-width:520px;margin-bottom:22px}
+  .price-row{display:flex;align-items:baseline;gap:14px;margin:6px 0 22px}
+  .price-now{font-family:'Anton';font-size:2.2rem}
+  .price-old{font-size:1.2rem;color:#9a9189;text-decoration:line-through}
+  .price-save{background:#ffe9d4;color:var(--orange-dark);font-weight:800;font-size:.8rem;padding:5px 12px;border-radius:40px;text-transform:uppercase;letter-spacing:.5px}
+  .cta-cluster{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  .microtrust{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;font-size:.85rem;font-weight:600;color:var(--ink-2)}
+  .microtrust span{display:inline-flex;align-items:center;gap:7px}
+  .microtrust svg{width:17px;height:17px;color:var(--green)}
+
+  .hero-visual{position:relative;border-radius:26px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3.4;background:linear-gradient(160deg,#3a4a52,#22303a)}
+  .hero-visual .badge{position:absolute;z-index:3;background:#fff;border-radius:14px;padding:10px 14px;box-shadow:var(--shadow);display:flex;align-items:center;gap:9px;font-weight:800;font-size:.82rem}
+  .hero-visual .badge.tl{top:16px;left:16px}
+  .hero-visual .badge.br{bottom:16px;right:16px}
+  .hero-visual .badge .ic{width:30px;height:30px;border-radius:9px;background:#ffe9d4;display:grid;place-items:center;color:var(--orange-dark)}
+  .hero-visual .badge .ic svg{width:18px;height:18px}
+  .floatcap{position:absolute;left:16px;bottom:16px;z-index:3;color:#fff;font-weight:700;font-size:.8rem;background:rgba(21,17,14,.5);backdrop-filter:blur(4px);padding:8px 13px;border-radius:40px}
+
+  .trust{background:var(--ink);color:#fff;padding:22px 0}
+  .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .trust-item{display:flex;align-items:center;gap:12px;justify-content:center;text-align:left}
+  .trust-item svg{width:26px;height:26px;color:var(--orange);flex-shrink:0}
+  .trust-item b{display:block;font-size:.95rem}
+  .trust-item small{color:#bdb6ad;font-size:.78rem}
+  @media(max-width:760px){.trust-grid{grid-template-columns:repeat(2,1fr);gap:16px}}
+
+  section.block{padding:72px 0}
+  .sec-head{text-align:center;max-width:680px;margin:0 auto 44px}
+  .sec-head h2{font-size:clamp(2rem,4vw,2.9rem);margin:12px 0 12px}
+  .sec-head p{color:var(--slate);font-size:1.05rem}
+
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .ba-card{border-radius:var(--radius);padding:28px;border:1px solid var(--line);position:relative;overflow:hidden}
+  .ba-card.before{background:var(--cream)}
+  .ba-card.after{background:#15110E;color:#fff;border-color:#15110E}
+  .ba-tag{display:inline-block;font-weight:800;text-transform:uppercase;letter-spacing:1px;font-size:.72rem;padding:6px 13px;border-radius:30px;margin-bottom:16px}
+  .ba-card.before .ba-tag{background:#eadfd2;color:#8a7c6c}
+  .ba-card.after .ba-tag{background:var(--orange);color:#fff}
+  .ba-card h3{font-size:1.4rem;margin-bottom:12px}
+  .ba-card.after h3{color:#fff}
+  .ba-list{list-style:none;display:flex;flex-direction:column;gap:11px;margin-top:14px}
+  .ba-list li{display:flex;gap:11px;align-items:flex-start;font-size:.96rem}
+  .ba-list svg{width:20px;height:20px;flex-shrink:0;margin-top:1px}
+  .ba-card.before .ba-list svg{color:#c9897a}
+  .ba-card.after .ba-list svg{color:#54d08a}
+  .ba-card.before .ba-list li{color:var(--slate)}
+  @media(max-width:760px){.ba{grid-template-columns:1fr}}
+
+  .benefits{background:var(--cream)}
+  .bgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .bcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:transform .2s, box-shadow .2s}
+  .bcard:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .bcard .ic{width:54px;height:54px;border-radius:14px;background:#ffe9d4;display:grid;place-items:center;color:var(--orange-dark);margin-bottom:16px}
+  .bcard .ic svg{width:28px;height:28px}
+  .bcard h3{font-size:1.18rem;margin-bottom:8px}
+  .bcard p{color:var(--slate);font-size:.94rem}
+  @media(max-width:860px){.bgrid{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.bgrid{grid-template-columns:1fr}}
+
+  .compare-wrap{max-width:760px;margin:0 auto}
+  .ctable{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+  .ctable th,.ctable td{padding:16px 18px;text-align:left;border-bottom:1px solid var(--line)}
+  .ctable thead th{background:var(--ink);color:#fff;font-family:'Anton';letter-spacing:.5px;font-size:1rem;text-transform:uppercase}
+  .ctable thead th.us{background:var(--orange)}
+  .ctable td.feat{font-weight:600}
+  .ctable td.col{text-align:center;width:140px}
+  .ctable tr:last-child td{border-bottom:0}
+  .ctable .yes{color:var(--green)}
+  .ctable .no{color:#c46a5a}
+  .ctable td.col svg{width:22px;height:22px;margin:0 auto}
+  .ctable tbody tr:nth-child(even){background:#fcf9f5}
+
+  .stats{background:linear-gradient(160deg,#15110E,#2a2019);color:#fff}
+  .stats .sec-head h2,.stats .sec-head p{color:#fff}
+  .stats .sec-head p{color:#c9c1b8}
+  .sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .scard{text-align:center;padding:30px 22px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius)}
+  .scard .num{font-family:'Anton';font-size:3.2rem;color:var(--orange);line-height:1}
+  .scard h3{font-size:1.05rem;margin:12px 0 8px;color:#fff}
+  .scard p{font-size:.88rem;color:#c9c1b8}
+  @media(max-width:760px){.sgrid{grid-template-columns:1fr}}
+
+  .rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .rcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+  .rcard .top{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+  .avatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:800;font-family:'Anton';font-size:1.1rem}
+  .rcard .s{color:var(--orange);font-size:.95rem;letter-spacing:1px}
+  .rcard .name{font-weight:800;font-size:.95rem}
+  .rcard .ver{font-size:.74rem;color:var(--green);font-weight:700;display:flex;align-items:center;gap:4px}
+  .rcard p{font-size:.95rem;color:var(--ink-2)}
+  @media(max-width:860px){.rgrid{grid-template-columns:1fr}}
+
+  .bundle{background:var(--sand)}
+  .bundle-card{background:#fff;border-radius:24px;box-shadow:var(--shadow);overflow:hidden;display:grid;grid-template-columns:1.1fr 1fr}
+  .bundle-visual{background:linear-gradient(160deg,#2a3a42,#1a2228);position:relative;min-height:320px;display:grid;place-items:center;padding:30px}
+  .bundle-body{padding:38px}
+  .bundle-body h2{font-size:2rem;margin:10px 0 14px}
+  .bundle-items{list-style:none;display:flex;flex-direction:column;gap:12px;margin:18px 0}
+  .bundle-items li{display:flex;align-items:center;gap:12px;font-weight:600}
+  .bundle-items .plus{color:var(--orange);font-family:'Anton';font-size:1.2rem}
+  .bundle-items svg{width:22px;height:22px;color:var(--green)}
+  .bundle-price{display:flex;align-items:baseline;gap:12px;margin:14px 0 20px}
+  .bundle-price .now{font-family:'Anton';font-size:2.1rem}
+  .bundle-price .old{text-decoration:line-through;color:#9a9189}
+  @media(max-width:820px){.bundle-card{grid-template-columns:1fr}.bundle-visual{min-height:220px}}
+
+  .faq-wrap{max-width:760px;margin:0 auto}
+  .faq{border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden;background:#fff}
+  .faq button{width:100%;text-align:left;background:none;border:0;padding:20px 22px;font-size:1.04rem;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;color:var(--ink)}
+  .faq .ans{max-height:0;overflow:hidden;transition:max-height .3s ease;color:var(--slate)}
+  .faq .ans p{padding:0 22px 20px}
+  .faq.open .ans{max-height:240px}
+  .faq .chev{width:22px;height:22px;color:var(--orange-dark);transition:transform .3s;flex-shrink:0}
+  .faq.open .chev{transform:rotate(180deg)}
+
+  .guar{background:var(--ink);color:#fff;text-align:center}
+  .guar .seal{width:96px;height:96px;margin:0 auto 22px;border-radius:50%;border:3px solid var(--orange);display:grid;place-items:center;color:var(--orange)}
+  .guar .seal svg{width:48px;height:48px}
+  .guar h2{font-size:clamp(1.9rem,4vw,2.7rem);margin-bottom:14px}
+  .guar p{max-width:600px;margin:0 auto 26px;color:#cfc8bf;font-size:1.05rem}
+
+  .final{background:radial-gradient(120% 120% at 50% 0%, var(--cream), var(--sand));text-align:center}
+  .final h2{font-size:clamp(2.1rem,5vw,3.4rem);margin-bottom:14px}
+  .final p{color:var(--slate);font-size:1.1rem;margin-bottom:26px}
+
+  footer{background:#0F0C0A;color:#b7afa6;padding:48px 0 120px;font-size:.9rem}
+  .foot-grid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:flex-start}
+  footer .word{font-family:'Anton';color:#fff;font-size:1.6rem;letter-spacing:1px;margin-bottom:10px}
+  footer a{color:#b7afa6}
+  footer a:hover{color:var(--orange)}
+  .foot-col h4{color:#fff;font-size:.8rem;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:12px}
+  .foot-col a{display:block;margin-bottom:8px}
+  .foot-note{border-top:1px solid #241e19;margin-top:34px;padding-top:20px;font-size:.8rem;color:#7d756c}
+
+  .mcta{position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;border-top:1px solid var(--line);box-shadow:0 -10px 30px -16px rgba(0,0,0,.3);padding:11px 16px;display:none;align-items:center;justify-content:space-between;gap:12px}
+  .mcta .p{font-family:'Anton';font-size:1.3rem}
+  .mcta .p small{font-family:'Inter';font-weight:600;font-size:.7rem;color:#9a9189;text-decoration:line-through;margin-left:6px}
+  .mcta .btn{padding:13px 22px;font-size:.85rem}
+  @media(max-width:860px){.mcta{display:flex}}
+
+  .concept{position:fixed;top:84px;right:-1px;z-index:40;background:var(--ink);color:#fff;font-size:.7rem;font-weight:700;padding:7px 13px;border-radius:10px 0 0 10px;box-shadow:var(--shadow);max-width:230px;line-height:1.35;border:1px solid #2a2019;border-right:0}
+  .concept b{color:var(--orange)}
+  .concept a{color:#fff;text-decoration:underline}
+  @media(max-width:860px){.concept{top:auto;bottom:74px;font-size:.64rem;padding:6px 10px;max-width:185px}}
+
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<div class="anno">🐾 FATHER'S DAY SALE — <b>56% OFF</b> the RuffRover 2.0™ + Free Luxe Dog Bed. Ends soon.</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="RuffRover home">
+      <svg class="mark" viewBox="0 0 64 44" fill="none" aria-hidden="true">
+        <path d="M2 34c6-2 9-7 13-7 3 0 4 3 8 3 3 0 5-4 5-8 0-3-2-5-2-8 0-4 4-7 9-7 3 0 5 1 8 1 4 0 6-3 9-3 2 0 3 1 3 3 0 4-5 6-5 10 0 3 2 4 2 7 0 5-5 9-12 9-5 0-7-2-11-2-3 0-4 2-7 4-4 2-9 3-13 3-4 0-6-1-7-3-1-2 0-5-1 5z" fill="#15110E"/>
+        <circle cx="49" cy="14" r="1.8" fill="#fff"/>
+      </svg>
+      <span class="word">RUFFROVER</span>
+    </a>
+    <nav class="navlinks">
+      <a href="#why">Why RuffRover</a>
+      <a href="#compare">Us vs Them</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#buy" class="btn headcta">Shop the 2.0</a>
+  </div>
+</header>
+
+<div class="concept">
+  <b>CONCEPT DEMO</b> by BuildMyTribe — an unsolicited landing-page redesign concept. Not affiliated with RuffRover.
+</div>
+
+<main id="top">
+
+  <section class="hero" id="buy">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <span class="eyebrow">#1 Hard-Bottom Dog Car Seat</span>
+        <h1>Every drive,<br><em>safer together.</em></h1>
+        <p class="lead">The RuffRover 2.0™ turns your back seat into a stable, supported den — so anxious pups settle, big dogs stop sliding, and your seats stay spotless. Setup takes one minute.</p>
+        <div class="stars" aria-label="Rated 4.9 out of 5 from 3,225 reviews">
+          <span class="s">★★★★★</span> 4.9 · 3,225 verified reviews
+        </div>
+        <div class="price-row">
+          <span class="price-now">$149.95</span>
+          <span class="price-old">$340.99</span>
+          <span class="price-save">Save 56%</span>
+        </div>
+        <div class="cta-cluster">
+          <a href="#bundle" class="btn">Shop the RuffRover 2.0
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#why" class="btn ghost">See how it works</a>
+        </div>
+        <div class="microtrust">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Free shipping over $200</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> 30-day money-back</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> 1-year warranty</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="Illustration of a dog riding safely in a RuffRover 2.0 car seat">
+        <svg viewBox="0 0 600 510" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#9ec6dc"/><stop offset="1" stop-color="#d9ead2"/>
+            </linearGradient>
+            <linearGradient id="seat" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#2c2c30"/><stop offset="1" stop-color="#161618"/>
+            </linearGradient>
+          </defs>
+          <rect width="600" height="510" fill="#1d272d"/>
+          <rect x="40" y="40" width="520" height="180" rx="14" fill="url(#sky)"/>
+          <circle cx="120" cy="95" r="26" fill="#f3f7ec" opacity=".8"/>
+          <path d="M0 170 Q150 120 300 165 T600 150 V220 H0 Z" fill="#7fae6e" opacity=".8"/>
+          <path d="M0 195 Q150 160 300 195 T600 185 V230 H0 Z" fill="#5f9258"/>
+          <rect x="28" y="40" width="22" height="200" rx="6" fill="#3a3a3e"/>
+          <rect x="550" y="40" width="22" height="200" rx="6" fill="#3a3a3e"/>
+          <path d="M40 250 Q40 230 70 230 L530 230 Q560 230 560 250 L560 430 Q560 470 510 470 L90 470 Q40 470 40 430 Z" fill="url(#seat)"/>
+          <path d="M70 232 L70 470 M530 232 L530 470" stroke="#000" stroke-opacity=".25" stroke-width="2"/>
+          <g stroke="#000" stroke-opacity=".18" stroke-width="2">
+            <line x1="160" y1="250" x2="160" y2="455"/><line x1="240" y1="250" x2="240" y2="455"/>
+            <line x1="320" y1="250" x2="320" y2="455"/><line x1="400" y1="250" x2="400" y2="455"/>
+            <line x1="460" y1="250" x2="460" y2="455"/>
+            <line x1="70" y1="320" x2="530" y2="320"/><line x1="70" y1="390" x2="530" y2="390"/>
+          </g>
+          <rect x="120" y="222" width="26" height="40" rx="6" fill="#EE7B1C"/>
+          <rect x="300" y="222" width="26" height="40" rx="6" fill="#EE7B1C"/>
+          <rect x="454" y="222" width="26" height="40" rx="6" fill="#EE7B1C"/>
+          <g>
+            <ellipse cx="300" cy="440" rx="150" ry="26" fill="#000" opacity=".25"/>
+            <path d="M210 410 Q200 330 270 320 Q360 308 380 360 Q392 410 360 430 Q300 448 240 440 Q214 436 210 410Z" fill="#e9e9ec"/>
+            <path d="M250 360 Q300 330 360 360 Q372 405 350 425 Q300 440 256 432 Q244 400 250 360Z" fill="#5b6066"/>
+            <circle cx="250" cy="320" r="52" fill="#eef0f2"/>
+            <path d="M214 300 Q235 312 250 300 Q265 312 286 300 Q280 340 250 352 Q220 340 214 300Z" fill="#5b6066"/>
+            <path d="M214 286 L205 244 L240 276 Z" fill="#eef0f2"/>
+            <path d="M286 286 L295 244 L260 276 Z" fill="#eef0f2"/>
+            <path d="M218 282 L213 256 L233 274 Z" fill="#9aa0a6"/>
+            <path d="M282 282 L287 256 L267 274 Z" fill="#9aa0a6"/>
+            <ellipse cx="234" cy="316" rx="6" ry="7" fill="#2b6ea8"/>
+            <ellipse cx="266" cy="316" rx="6" ry="7" fill="#2b6ea8"/>
+            <circle cx="235" cy="314" r="2" fill="#fff"/><circle cx="267" cy="314" r="2" fill="#fff"/>
+            <ellipse cx="250" cy="334" rx="7" ry="5" fill="#222"/>
+            <path d="M250 339 Q250 348 240 350 M250 339 Q250 348 260 350" stroke="#222" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+            <path d="M214 348 Q250 372 286 348 L286 360 Q250 386 214 360 Z" fill="#2c2c30"/>
+            <rect x="240" y="352" width="20" height="12" rx="3" fill="#EE7B1C"/>
+          </g>
+        </svg>
+        <div class="badge tl"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V6z"/></svg></span>Holds 280 lbs</div>
+        <div class="badge br"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s7 7 7 12a7 7 0 0 1-14 0c0-5 7-12 7-12z"/></svg></span>100% Waterproof</div>
+        <div class="floatcap">🐶 50,000+ happy pups &amp; parents</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust">
+    <div class="wrap trust-grid">
+      <div class="trust-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M6 17l1.5-9h9L18 17M9 8V6a3 3 0 0 1 6 0v2"/><circle cx="8" cy="19" r="2"/><circle cx="16" cy="19" r="2"/></svg><div><b>Fits every car</b><small>Sedans, SUVs &amp; trucks</small></div></div>
+      <div class="trust-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s7 7 7 12a7 7 0 0 1-14 0c0-5 7-12 7-12z"/></svg><div><b>Tear &amp; waterproof</b><small>Mud, fur &amp; spills wipe clean</small></div></div>
+      <div class="trust-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V6z"/><path d="M9 12l2 2 4-4"/></svg><div><b>Holds 280 lbs</b><small>Hard-bottom support</small></div></div>
+      <div class="trust-item reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>1-minute setup</b><small>Clips in, no tools</small></div></div>
+    </div>
+  </div>
+
+  <section class="block" id="why">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">The RuffRover difference</span>
+        <h2>From chaos in the back seat to calm</h2>
+        <p>Most pet covers sag, slide, and bunch the moment your dog moves. The hard-bottom 2.0 stays flat and firm — the way travel should feel.</p>
+      </div>
+      <div class="ba">
+        <div class="ba-card before reveal">
+          <span class="ba-tag">Before</span>
+          <h3>Soft covers that give up</h3>
+          <ul class="ba-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg> Sags into the footwell and shifts on every turn</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg> Anxious dogs pace, whine, and can't settle</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg> Thin fabric rips and soaks through</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg> Fur and mud ground into your seats</li>
+          </ul>
+        </div>
+        <div class="ba-card after reveal">
+          <span class="ba-tag">After — RuffRover 2.0</span>
+          <h3>A stable, den-like ride</h3>
+          <ul class="ba-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Rigid hard bottom stays flat and supported</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> 92% of owners report calmer, settled pups</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> 100% tear-proof &amp; waterproof shell</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Wipes clean in seconds — seats stay new</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block benefits">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Built for real adventures</span>
+        <h2>Why pet parents switch to the 2.0</h2>
+      </div>
+      <div class="bgrid">
+        <div class="bcard reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V6z"/></svg></div><h3>Hard-bottom safety</h3><p>An engineered rigid base holds up to 280 lbs without sinking, giving your dog a steady, secure platform on every drive.</p></div>
+        <div class="bcard reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s7 7 7 12a7 7 0 0 1-14 0c0-5 7-12 7-12z"/></svg></div><h3>Waterproof &amp; tear-proof</h3><p>Heavy-duty layered fabric shrugs off claws, mud, drool and spills. A quick wipe and it looks brand new.</p></div>
+        <div class="bcard reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h7"/></svg></div><h3>Airflow screen</h3><p>A breathable mesh window keeps air moving so your pup stays cool and connected to you up front.</p></div>
+        <div class="bcard reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M6 17l1.5-9h9L18 17"/><circle cx="8" cy="19" r="2"/><circle cx="16" cy="19" r="2"/></svg></div><h3>Universal fit</h3><p>Adjustable straps and anchors fit sedans, SUVs and trucks. If it has a back seat, the RuffRover fits it.</p></div>
+        <div class="bcard reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>One-minute setup</h3><p>Four clips, two headrest loops, done. No tools, no struggle — and it folds away just as fast.</p></div>
+        <div class="bcard reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><h3>Backed for a year</h3><p>Every 2.0 ships with a 1-year warranty and a 30-day money-back guarantee. Travel with zero risk.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="compare">
+    <div class="wrap compare-wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Us vs Them</span>
+        <h2>Not all seat covers are equal</h2>
+      </div>
+      <div class="reveal">
+      <table class="ctable">
+        <thead><tr><th>Feature</th><th class="us">RuffRover 2.0</th><th>Others</th></tr></thead>
+        <tbody>
+          <tr><td class="feat">Heavy-duty hard bottom</td><td class="col"><svg class="yes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></td><td class="col"><svg class="no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></td></tr>
+          <tr><td class="feat">Resists up to 280 lbs</td><td class="col"><svg class="yes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></td><td class="col"><svg class="no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></td></tr>
+          <tr><td class="feat">100% tear &amp; waterproof</td><td class="col"><svg class="yes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></td><td class="col"><svg class="no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></td></tr>
+          <tr><td class="feat">Breathable airflow screen</td><td class="col"><svg class="yes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></td><td class="col"><svg class="no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></td></tr>
+          <tr><td class="feat">Stays flat over time</td><td class="col"><svg class="yes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></td><td class="col"><svg class="no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></td></tr>
+          <tr><td class="feat">Includes 1-year warranty</td><td class="col"><svg class="yes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></td><td class="col"><svg class="no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="block stats">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow" style="color:var(--orange)">The results are in</span>
+        <h2>50,000+ pets &amp; parents travel better</h2>
+        <p>Based on surveyed RuffRover 2.0 owners after switching from a standard cover.</p>
+      </div>
+      <div class="sgrid">
+        <div class="scard reveal"><div class="num" data-count="97">0</div><h3>Easier travel</h3><p>Reported a significant improvement in how easy trips with their pet became.</p></div>
+        <div class="scard reveal"><div class="num" data-count="92">0</div><h3>Calmer pups</h3><p>Noticed reduced anxiety — dogs settle faster and stay relaxed on the road.</p></div>
+        <div class="scard reveal"><div class="num" data-count="89">0</div><h3>Simple to live with</h3><p>Found it unexpectedly easy to install, clean, and maintain day to day.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="reviews">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">★★★★★ 4.9 from 3,225 reviews</span>
+        <h2>Loved by dogs who deserve the window seat</h2>
+      </div>
+      <div class="rgrid">
+        <div class="rcard reveal">
+          <div class="top"><div class="avatar" style="background:#EE7B1C">M</div><div><div class="name">Marcus T.</div><div class="ver"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Verified buyer</div></div></div>
+          <div class="s">★★★★★</div>
+          <p>"My 90-lb shepherd used to slide all over the back seat. The hard bottom is a game-changer — he lies down two minutes into every drive now."</p>
+        </div>
+        <div class="rcard reveal">
+          <div class="top"><div class="avatar" style="background:#2C9D63">P</div><div><div class="name">Priya R.</div><div class="ver"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Verified buyer</div></div></div>
+          <div class="s">★★★★★</div>
+          <p>"We do beach trips every weekend. Sand, water, muddy paws — I just shake it out and wipe it down. Seats underneath are still flawless."</p>
+        </div>
+        <div class="rcard reveal">
+          <div class="top"><div class="avatar" style="background:#2A241F">J</div><div><div class="name">Jordan &amp; Cooper</div><div class="ver"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Verified buyer</div></div></div>
+          <div class="s">★★★★★</div>
+          <p>"Setup genuinely took a minute. Cooper gets anxious in cars but the den feeling calmed him right down. Worth every penny."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block bundle" id="bundle">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Most popular bundle</span>
+        <h2>The Complete Travel Set</h2>
+      </div>
+      <div class="bundle-card reveal">
+        <div class="bundle-visual">
+          <svg viewBox="0 0 320 280" width="100%" height="100%" role="img" aria-hidden="true">
+            <rect width="320" height="280" rx="0" fill="none"/>
+            <rect x="34" y="60" width="170" height="150" rx="20" fill="#23262b"/>
+            <g stroke="#000" stroke-opacity=".2" stroke-width="2"><line x1="80" y1="70" x2="80" y2="200"/><line x1="120" y1="70" x2="120" y2="200"/><line x1="160" y1="70" x2="160" y2="200"/><line x1="44" y1="120" x2="194" y2="120"/><line x1="44" y1="165" x2="194" y2="165"/></g>
+            <rect x="50" y="52" width="18" height="26" rx="5" fill="#EE7B1C"/>
+            <rect x="168" y="52" width="18" height="26" rx="5" fill="#EE7B1C"/>
+            <ellipse cx="232" cy="200" rx="70" ry="34" fill="#3a3f45"/>
+            <ellipse cx="232" cy="194" rx="52" ry="22" fill="#52585f"/>
+            <g fill="#f2e7da"><circle cx="232" cy="150" r="9"/><circle cx="246" cy="150" r="9"/><circle cx="232" cy="138" r="9"/><circle cx="246" cy="138" r="9"/><rect x="232" y="140" width="14" height="8" /></g>
+          </svg>
+        </div>
+        <div class="bundle-body">
+          <h2>Seat + bed, set for the road</h2>
+          <ul class="bundle-items">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> RuffRover 2.0™ Hard-Bottom Car Seat</li>
+            <li><span class="plus">+</span> Luxe Dog Bed — sized for the 2.0</li>
+            <li><span class="plus">+</span> Free shipping &amp; 1-year warranty</li>
+          </ul>
+          <div class="bundle-price">
+            <span class="now">$199.95</span>
+            <span class="old">$469.98</span>
+            <span class="price-save">Bundle &amp; save 57%</span>
+          </div>
+          <a href="#" class="btn" onclick="return false;">Add the bundle to cart
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <p style="font-size:.8rem;color:#9a9189;margin-top:12px">Demo button — no live checkout on this concept page.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block benefits" id="faq">
+    <div class="wrap faq-wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Good to know</span>
+        <h2>Questions, answered</h2>
+      </div>
+      <div class="reveal">
+        <div class="faq">
+          <button aria-expanded="false">Will it fit my car? <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="ans"><p>Yes. The RuffRover 2.0 is built with adjustable straps and headrest anchors that fit virtually any sedan, SUV, or truck back seat. If your vehicle has a back seat, it fits.</p></div>
+        </div>
+        <div class="faq">
+          <button aria-expanded="false">How much weight can it hold? <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="ans"><p>The reinforced hard bottom safely supports up to 280 lbs, so it stays flat and stable for everything from a small terrier to multiple large dogs.</p></div>
+        </div>
+        <div class="faq">
+          <button aria-expanded="false">Is it really waterproof and easy to clean? <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="ans"><p>Completely. The layered fabric is 100% tear-proof and waterproof. Mud, fur, drool and spills wipe right off, and the covers are removable for a deeper clean.</p></div>
+        </div>
+        <div class="faq">
+          <button aria-expanded="false">How long does setup take? <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="ans"><p>About a minute. Clip the four anchors, loop it over the headrests, and you're ready to roll — no tools required. It folds away just as quickly.</p></div>
+        </div>
+        <div class="faq">
+          <button aria-expanded="false">What if my dog doesn't love it? <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="ans"><p>Every order is protected by a 30-day money-back guarantee and a 1-year warranty. If it isn't right for you, reach out and the team will make it right.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block guar" id="guar">
+    <div class="wrap">
+      <div class="seal reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+      <h2 class="reveal">Try it for 30 days, risk-free</h2>
+      <p class="reveal">If the RuffRover 2.0 doesn't make travel calmer and cleaner for you and your dog, send it back within 30 days for a full refund. Free U.S. shipping, delivered in 2–5 business days.</p>
+      <a href="#buy" class="btn reveal">Start traveling safer</a>
+    </div>
+  </section>
+
+  <section class="block final">
+    <div class="wrap">
+      <span class="eyebrow reveal">Father's Day Sale — 56% off</span>
+      <h2 class="reveal">Adventure awaits.<br>Bring them along, safely.</h2>
+      <p class="reveal">Join 50,000+ pet parents who upgraded the back seat. One minute to set up. A lifetime of better drives.</p>
+      <a href="#bundle" class="btn reveal">Shop the RuffRover 2.0 — $149.95</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div style="max-width:300px">
+        <div class="word">RUFFROVER</div>
+        <p>Innovative pet-travel gear that makes every drive with your dog safer, easier, and more enjoyable.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Shop</h4>
+        <a href="#buy">RuffRover 2.0™</a>
+        <a href="#bundle">Travel Set Bundle</a>
+        <a href="#why">Accessories</a>
+      </div>
+      <div class="foot-col">
+        <h4>Support</h4>
+        <a href="#faq">FAQ</a>
+        <a href="#guar">30-Day Guarantee</a>
+        <a href="#reviews">Reviews</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Track Your Order</a>
+      </div>
+    </div>
+    <div class="foot-note">
+      Concept landing page designed by <b style="color:#fff">BuildMyTribe</b> as an unsolicited demo. This is a design concept and is not affiliated with, endorsed by, or operated by RuffRover. All product names belong to their respective owner. No live checkout.
+    </div>
+  </div>
+</footer>
+
+<div class="mcta">
+  <div class="p">$149.95 <small>$340.99</small></div>
+  <a href="#bundle" class="btn">Shop Now</a>
+</div>
+
+<script>
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  function animateCount(el){
+    const target = +el.dataset.count; let cur = 0;
+    const step = Math.max(1, Math.round(target/45));
+    const t = setInterval(()=>{ cur+=step; if(cur>=target){cur=target;clearInterval(t);} el.textContent = cur + '%'; }, 22);
+  }
+  const sio = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ animateCount(e.target); sio.unobserve(e.target);} });
+  },{threshold:.5});
+  document.querySelectorAll('[data-count]').forEach(el=>sio.observe(el));
+
+  document.querySelectorAll('.faq button').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const item = btn.parentElement;
+      const open = item.classList.contains('open');
+      document.querySelectorAll('.faq').forEach(f=>{f.classList.remove('open');f.querySelector('button').setAttribute('aria-expanded','false');});
+      if(!open){ item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+    });
+  });
+</script>
+</body>
+</html>
